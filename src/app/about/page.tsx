@@ -22,10 +22,7 @@ export default function page() {
 						<ul className="font-light text-gray-400">
 							<li>- Use of Next JS 13/14</li>
 							<li>- Use of app directory</li>
-							<li>
-								- Use of server side rendering, server components and static
-								generation
-							</li>
+							<li>- No use of external libraries</li>
 							<li>- Use of typescript in the entire project</li>
 							<li>- Responsive design</li>
 							<li>- Use of animations</li>

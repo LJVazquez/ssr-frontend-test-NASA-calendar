@@ -16,7 +16,7 @@ export default function Home(): JSX.Element {
 		null
 	);
 	const [loading, setLoading] = useState(true);
-	const [error, setError] = useState<string | null>('test');
+	const [error, setError] = useState<string | null>(null);
 
 	const { currentMonthName } = getCurrentMonthData();
 
