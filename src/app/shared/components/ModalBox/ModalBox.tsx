@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import CloseIcon from '@/app/shared/assets/icons/CloseIcon';
+import CircledCloseIcon from '@/app/shared/assets/icons/CircledCloseIcon';
 
 type Props = {
 	closeModal: () => void;
@@ -36,7 +36,11 @@ export default function ModalBox({ children, closeModal }: Props): JSX.Element {
 					className="absolute top-2 right-2 cursor-pointer text-white"
 					onClick={handleClose}
 				>
-					<CloseIcon width="20" height="20" additionalClasses="text-white" />
+					<CircledCloseIcon
+						width="20"
+						height="20"
+						additionalClasses="text-white"
+					/>
 				</span>
 				{children}
 			</div>

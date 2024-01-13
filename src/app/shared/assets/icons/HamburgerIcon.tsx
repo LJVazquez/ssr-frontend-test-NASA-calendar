@@ -1,6 +1,6 @@
 import { IconProps } from './iconProps';
 
-export default function CloseIcon({
+export default function HamburgerIcon({
 	additionalClasses,
 	width,
 	height,
@@ -16,8 +16,8 @@ export default function CloseIcon({
 		>
 			<path
 				fillRule="evenodd"
-				d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
 				clipRule="evenodd"
+				d="M4 5a1 1 0 100 2h16a1 1 0 100-2H4zM4 11a1 1 0 100 2h16a1 1 0 100-2H4zm0 6a1 1 0 100 2h16a1 1 0 100-2H4z"
 			/>
 		</svg>
 	);
