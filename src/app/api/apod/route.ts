@@ -2,12 +2,13 @@ import { ApodApiData } from '@/app/shared/models/pictureModels';
 import { NextRequest, NextResponse } from 'next/server';
 
 const API_KEY = process.env.NASA_API_KEY;
+const APOD_URL = 'https://api.nasa.gov/planetary/apod';
 
 export async function GET(req: NextRequest) {
 	const startDate = req.nextUrl.searchParams.get('start_date');
 	const endDate = req.nextUrl.searchParams.get('end_date');
 
-	let baseUrl = `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&thumbs=true`;
+	let baseUrl = `${APOD_URL}?api_key=${API_KEY}&thumbs=true`;
 
 	if (startDate && endDate) {
 		baseUrl = `${baseUrl}&start_date=${startDate}&end_date=${endDate}`;

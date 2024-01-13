@@ -4,7 +4,7 @@ type Props = {
 	picture: DailyPicture;
 };
 
-export default function PictureData({ picture }: Props) {
+export default function PictureData({ picture }: Props): JSX.Element {
 	const { title, explanation, url, mediaType } = picture;
 
 	return (

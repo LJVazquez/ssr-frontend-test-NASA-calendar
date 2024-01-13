@@ -4,7 +4,7 @@ type Props = {
 	message: string;
 };
 
-export default function AlertMessage({ message }: Props) {
+export default function AlertMessage({ message }: Props): JSX.Element {
 	const [display, setDisplay] = useState(false);
 
 	useEffect(() => {

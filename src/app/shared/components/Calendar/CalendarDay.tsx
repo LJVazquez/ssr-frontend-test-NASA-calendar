@@ -12,7 +12,7 @@ export default function CalendarDay({
 	title,
 	dayNumber,
 	onClick,
-}: Props) {
+}: Props): JSX.Element {
 	return (
 		<div className="mb-4 relative group" onClick={onClick}>
 			<span className="absolute text-white top-2 left-2">{dayNumber}</span>
