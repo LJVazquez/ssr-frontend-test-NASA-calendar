@@ -10,8 +10,12 @@ export const getCurrentMonthPictures = async () => {
 	const currentDate = `${currentYear}-${currentMonth}-${currentDay}`;
 
 	const res = await fetch(
-		`/api/apod?start_date=${startDate}&end_date=${currentDate}`
+		`/api/apod/multiple?start_date=${startDate}&end_date=${currentDate}`
 	);
+
+	if (!res.ok) {
+		throw new Error(res.statusText);
+	}
 
 	const data = await res.json();
 	const currentMonthPictures = transformApodApiDataArrayToPictureArray(data);
